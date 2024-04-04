@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Bashu",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to upload your profile picture and add calabash image"
+        }
+      ]
+    ],
+    "slug": "Bashu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon1.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Giving access to photos enable us to access your photos stored on your device. This way, you're only able to upload or add photo to Calabash feature or updating your profile image.",
+        "NSPhotoLibraryAddUsageDescription": "Giving access to photos enable us to access your photos stored on your device. This way, you're only able to upload or add photo to Calabash feature or updating your profile image.",
+        "NSCameraUsageDescription": "Giving access to camera enable us to get photo taken by your camera. This way, you're only able to upload or add photo to Calabash feature or updating your profile image."
+      },
+      "supportsTablet": true,
+      "buildNumber": "1",
+      "bundleIdentifier": "com.bashu.social.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.bashuapp.app",
+      "versionCode": 5,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "591e0d64-5ec1-4c20-b0f8-5941bebb77e5"
+      }
+    }
+  }
+}
